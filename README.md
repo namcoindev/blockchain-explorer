@@ -1,4 +1,5 @@
 # NamCoin Blockchain Explorer
+This explorer runs on Github currently and will always be available and online.
 
 This Blockchain Explorer is entirely self contained.
 
