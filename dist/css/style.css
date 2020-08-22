@@ -11,7 +11,7 @@
 }
 
 .navbar-dark {
-	background: #FF5733;
+	background: #8439AA;
 }
 
 .navbar-nav .nav-item {
@@ -27,7 +27,7 @@ a:hover {
 }
 
 .btn-primary {
-	background-color: #43b380;
+	background-color: #8439AA;
 	border-color: #43b380;
 }
 
@@ -75,7 +75,7 @@ a:hover {
 #nodes i.has-trtl-red,
 #pools i.has-trtl-green,
 #nodes i.has-trtl-red {
-	background: #43b380;
+	background: #8439AA;
 	display: inline-block;
 	width: .5rem;
 	height: .5rem;
