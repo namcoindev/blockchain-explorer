@@ -32,7 +32,7 @@ $(document).ready(function () {
         targets: [5],
         render: function (data, type, row, meta) {
           if (type === 'display') {
-            data = numeral(data / Math.pow(10, ExplorerConfig.decimalPoints)).format('0,0.00')
+            data = numeral(data / Math.pow(10, ExplorerConfig.decimalPoints)).format('0,0.00000')
           }
           return data
         }
@@ -105,7 +105,7 @@ function getAndDrawPoolStats () {
           numeral(pool.height).format('0,0'),
           pool.hashrate,
           numeral(pool.miners).format('0,0'),
-          numeral(pool.fee).format('0,0.00') + '%',
+          numeral(pool.fee).format('0,0.00000') + '%',
           pool.minPayout,
           pool.lastBlock * 1000,
           {
