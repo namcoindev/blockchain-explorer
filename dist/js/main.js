@@ -163,7 +163,7 @@ function getAndDisplayLastBlockHeader() {
       $('#blockchainHashRate').text(numeral(data.difficulty / ExplorerConfig.blockTargetTime).format('0,0') + ' H/s')
       $('#blockchainReward').text(numeral(data.reward / Math.pow(10, ExplorerConfig.decimalPoints)).format('0,0.00000') + ' ' + ExplorerConfig.ticker)
       $('#blockchainTransactions').text(numeral(data.alreadyGeneratedTransactions).format('0,00'))
-      $('#blockchainCirculatingSupply').text(numeral(data.alreadyGeneratedCoins / Math.pow(10, ExplorerConfig.decimalPoints)).format('0,0.00000') + ' ' + ExplorerConfig.ticker)
+      $('#blockchainCirculatingSupply').text(numeral(data.alreadyGeneratedCoins / Math.pow(10, ExplorerConfig.decimalPoints)).format('0,0.00') + ' ' + ExplorerConfig.ticker)
       $('#blockchainTotalSupply').text(numeral(ExplorerConfig.maxSupply / Math.pow(10, ExplorerConfig.decimalPoints)).format('0,0.00') + ' ' + ExplorerConfig.ticker)
 
       var nextFork
@@ -240,7 +240,7 @@ function updateRecentBlocks(table, height) {
           (new Date(block.timestamp * 1000)).toLocaleTimeString(),
           {
             url: block.poolURL || false,
-            name: block.poolName || 'Unknown'
+            name: block.poolName || 'Network'
           }
         ])
       }
