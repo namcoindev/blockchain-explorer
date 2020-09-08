@@ -1,5 +1,5 @@
 const ExplorerConfig = {
-  apiBaseUrl: 'http://138.68.31.205:11779',
+  apiBaseUrl: 'https://api.namcoin.org',
   ticker: 'NAM',
   maxSupply: 10000000000000,
   emissionSpeed: 21,
