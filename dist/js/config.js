@@ -1,7 +1,5 @@
 const ExplorerConfig = {
-  apiBaseUrl: 'https://api.namcoin.org',
-  poolApiUrl: 'https://partystats.namcoin.org/stats',
-  poolListUrl: 'https://raw.githubusercontent.com/namcoindev/pool-list/master/pools.json',
+  apiBaseUrl: 'http://138.68.31.205:11779',
   ticker: 'NAM',
   maxSupply: 10000000000000,
   emissionSpeed: 21,
